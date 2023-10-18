@@ -10,7 +10,7 @@ public:
         int rem = sum % k;
 
         if(rem < 0){
-            rem+=k;
+            rem= rem + k;
         }
         if (map.find(rem) != map.end()) {
             ans += map[rem];
